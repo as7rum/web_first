@@ -1,0 +1,30 @@
+<html>
+     <title>Сайт Айнара Ерошенкова</title>
+     <h1>Айнар Ерошенков</h1>
+
+     <div class="article-list">
+        {% for article in articles %}
+            <div class="article">
+                <h2 class="article-title">{{article.title}}</h2>
+                <p class="article-summary">{{article.summary}}</p>
+            </div>
+        {% endfor %}
+     </div>
+
+     <!-- <div>
+        {% for k, v in defaultdict.items %}
+            Do something with k and v here...
+        {% endfor %}
+     </div> -->
+
+     <!-- <div class="article-list">
+        <div class="article">
+            <h2 class="article-title">Заголовок статьи 1</h2>
+            <p class="article-summary">Самари статьи 1</p>
+        </div>
+        <div class="article">
+            <h2 class="article-title">Заголовок статьи 2</h2>
+            <p class="article-summary">Самари статьи 2</p>
+        </div>
+     </div> -->
+</html>
