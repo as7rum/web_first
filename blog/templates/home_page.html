@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Сайт Айнара Ерошенкова {% endblock %}
+
+{% block content %}
+     <h1>Айнар Ерошенков</h1>
+
+     <div class="article-list">
+        {% for article in articles %}
+            <div class="article">
+                <h2 class="article-title">
+                    <a href="{{ article.get_absolute_url }}">{{article.title}}</a>
+                </h2>
+                <p class="article-summary">{{article.summary}}</p>
+            </div>
+        {% endfor %}
+     </div>
+{% endblock %}
